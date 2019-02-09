@@ -17,7 +17,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <p>
         <?= Html::a('<span class="glyphicon glyphicon-plus fa-ico-action fa-green"></span>', ['create', 'id' => $model->id], ['class' => '', 'title' => 'Nuova voce']) ?>
-        <?= Html::a('<i class="fab fa-telegram-plane fa-ico-action"></i>', ['site/send'], ['class' => '', 'title'=>Yii::t('app', 'Invia tutte le news')]) ?>
+        <?= Html::a('<i class="fab fa-telegram-plane fa-ico-action"></i>', ['telegram/index'], ['class' => '', 'title'=>Yii::t('app', 'Invia tutte le news')]) ?>
     </p>
 
     <?= GridView::widget([
